@@ -1,0 +1,16 @@
+take 10 inputs from user :
+2  1 
+4  5 
+6  9 
+8  7 
+12 3
+output:
+even total :24
+odd total : 11
+even :5
+odd: 5
+even 2 4 6 8 12
+odd 1 5 3 9 7 
+
+
+-------------------------------------------
