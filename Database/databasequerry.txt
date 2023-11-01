@@ -1,0 +1,37 @@
+INSERT INTO `school1` (`RollNo`, `name`, `Grade`) VALUES (NULL, 'JayDeep', 'A'), (NULL, 'Shara', 'B'), (NULL, 'Mark', 'C'), (NULL, 'Dhara', 'A'), (NULL, 'Nishant', 'A++');
+
+CREATE TABLE Grade(
+	Seatno int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    name varchar (20),
+	F_name int NOT NULL,
+    FOREIGN KEY(F_name) REFERENCES school1 (Rollno)
+
+);
+INSERT INTO `grade` (`Seatno`, `name`, `F_name`) VALUES (NULL, 'Shah', '4'), (NULL, 'Vaghala', '3'), (NULL, 'Patel', '5'), (NULL, 'Ross', '1'), (NULL, 'Mehata', '2');
+DELETE FROM pritesh WHERE id=3;
+Select * from school1
+SELECT name FROM `school1` 
+SELECT * FROM `school1` WHERE name="Dhara";
+SELECT name,Grade FROM `school1` WHERE name="Dhara";
+SELECT * FROM school1 WHERE Grade="A" AND name="Dhara";
+false statment    SELECT * FROM school1 WHERE Grade="B" AND name="Dhara";
+
+SELECT name FROM school1 WHERE name LIKE 'a%';
+
+
+
+SELECT * FROM `employees` WHERE salary =(SELECT MAX(salary) FROM employees);
+
+SELECT * FROM `employees` WHERE salary =(SELECT MIN(salary) FROM employees);
+
+SELECT * FROM employees ORDER BY salary ;
+
+SELECT AVG(salary) FROM `employees` 
+SELECT * FROM employees ORDER BY salary DESC;
+
+SELECT name FROM school1 WHERE name LIKE '%a';
+
+
+SELECT SUM(salary)  AS totalsalary  FROM `salary`;
+
+SELECT  name,salary FROM salary WHERE salary= ( SELECT MAX(salary) FROM salary);

@@ -20,7 +20,7 @@ int fact(int n)
     }  
     else   
     {  
-        return fact(n-1)+fact(n-2);  
+        return n * factorial(n - 1);  
     }  
 }  
 
