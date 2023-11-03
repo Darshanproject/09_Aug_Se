@@ -1,0 +1,17 @@
+SELECT grade.name,school1.name, school1.Grade FROM grade INNER JOIN school1 ON
+grade.F_name = school1.RollNo;
+
+
+SELECT table1.column1, table2.column2...FROM table1LEFT JOIN table2ON
+table1.common_filed = table2.common_field;
+
+SELECT school1.name, grade.name FROM school1  LEFT JOIN grade ON
+school1.RollNo = grade.F_name;
+
+
+
+
+SELECT grade.name ,school1.name FROM grade RIGHT JOIN school1 ON 
+grade.F_name = school1.RollNo;
+
+insert into table_name (column name) values (id,name,2001-03-25)
